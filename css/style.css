@@ -11,6 +11,7 @@
     --color1: #3b3b3b;
     --color2: #202020;
     --color3: #40aa54;
+    --color4: #ecf7ee;
 }
 
 /* Navigation */
@@ -93,8 +94,100 @@
 .right-nav .like span {
     background: #ff6c57;
 }
+
 .menu li a:hover,
-.menu .active{
+.menu .active {
     color: var(--color3);
+    transition: all ease 0.3s;
+}
+
+/* Search */
+#search-banner {
+    max-width: 1250px;
+    height: 500px;
+    border-radius: 30px;
+    background: var(--color4);
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: bottom right;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.bg-1 {
+    position: absolute;
+    left: -5%;
+    top: 50px;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    transform: translateY(-60%);
+}
+
+.bg-2 {
+    position: absolute;
+    left: 60%;
+    top: -75px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.search-text {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: 70px;
+    position: relative;
+
+}
+
+.search-text h1 {
+    font-size: 3rem;
+    line-height: 55px;
+    color: var(--color2);
+}
+
+.search-text strong {
+    color: var(--color3);
+    font-size: 1.4rem;
+    margin-top: 4px;
+}
+.search-box{
+    background: #ffffff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    padding: 0px 5px 0px 20px;
+    border-radius: 30px;
+}
+.search-box .search-input{
+    height: 40px;
+    border: none;
+    width: 100%;
+    padding: 0 10px;
+    outline: none;
+}
+.search-box .search-btn{
+    width: 220px;
+    height: 40px;
+    border-radius: 30px;
+    background: var(--color3);
+    border: none;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.search-box .search-btn:hover{
+    background: #5ccf71;
     transition: all ease 0.3s;
 }
