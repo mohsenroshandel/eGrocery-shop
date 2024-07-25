@@ -198,7 +198,8 @@
 
 /* category */
 #category,
-#product {
+#product ,
+#bundle-pack{
     display: flex;
     flex-direction: column;
     max-width: 1000px;
@@ -295,7 +296,7 @@
 
 .product-box img {
     width: 60%;
-    height: 150px;
+    height: 160px;
 }
 
 .product-box strong {
@@ -350,4 +351,22 @@
 .product-box .like-btn:hover{
     color: #4eb060;
     transition: all ease 0.3s;
+}
+/* product bundle */
+#bundle-pack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1150px;
+    margin: 50px auto;
+    padding: 60px 0px 20px 0px;
+    border-radius: 20px;
+    background: #ecf7ee;
+    border: 1px solid #f3f3f3;
+}
+.product-container,
+.product-heading{
+    max-width: 1000px;
+    width: 100%;
 }
