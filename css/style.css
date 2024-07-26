@@ -198,8 +198,9 @@
 
 /* category */
 #category,
-#product ,
-#bundle-pack{
+#product,
+#bundle-pack,
+#partner {
     display: flex;
     flex-direction: column;
     max-width: 1000px;
@@ -207,14 +208,16 @@
 }
 
 .category-heading,
-.product-heading {
+.product-heading,
+.partner-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .category-heading h2,
-.product-heading h3 {
+.product-heading h3,
+.partner-heading h3 {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--color2);
@@ -341,19 +344,22 @@
     color: #ffffff;
     transition: all ease 0.3s;
 }
-.product-box .like-btn{
+
+.product-box .like-btn {
     position: absolute;
     right: 30px;
     top: 20px;
     color: #c9c9c9;
     font-size: 1.3rem;
 }
-.product-box .like-btn:hover{
+
+.product-box .like-btn:hover {
     color: #4eb060;
     transition: all ease 0.3s;
 }
+
 /* product bundle */
-#bundle-pack{
+#bundle-pack {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -365,16 +371,19 @@
     background: #ecf7ee;
     border: 1px solid #f3f3f3;
 }
+
 .product-container,
-.product-heading{
+.product-heading {
     max-width: 1000px;
     width: 100%;
 }
-#bundle-pack .product-box img{
+
+#bundle-pack .product-box img {
     width: 80%;
-    height: 160px;      
+    height: 160px;
 }
-#clients{
+
+#clients {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -385,6 +394,92 @@
     border-top: 1px solid #f3f3f3;
     border-bottom: 1px solid #f3f3f3;
 }
-.client-heading h3{
-    
+
+.client-heading h3 {
+    font-size: 1.5rem;
+    color: var(--color2);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.client-box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 90%;
+    margin-top: 40px;
+}
+
+.client-box {
+    background: #ffffff;
+    padding: 30px 20px;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 0px 30px 0px 30px;
+}
+
+.client-profile {
+    display: flex;
+    align-items: center;
+}
+
+.client-profile img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.profile-text strong {
+    color: #393939;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.profile-text span {
+    color: #949494;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.rating {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.rating i {
+    color: #fdcc0d;
+}
+
+.client-box p {
+    color: #7c7c7c;
+}
+
+/* Partner */
+#partner{
+    margin: 100px auto;
+}
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.logo-container img{
+    height: 55px;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(1);
+    opacity: 0.3;
+    transition: all ease 0.3s;
+}
+.logo-container img:hover{
+    filter: grayscale(0);
+    opacity: 1;
+    transition: all ease 0.3s;
 }
